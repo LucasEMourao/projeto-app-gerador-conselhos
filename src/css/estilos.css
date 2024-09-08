@@ -1,0 +1,78 @@
+body{
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.cartao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 450px;
+}
+
+.cartao .conselho-id{
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+
+.cartao .conselho-descricao{
+    color: hsl(193, 38%, 86%);
+    font-size: 23px;
+    padding: 23px;
+    text-align: center;
+}
+
+.cartao picture .desktop{
+    width: 100%;     
+}
+
+.cartao picture .mobile{
+    display: none;
+}
+
+.cartao .conselho-atualizar{
+   background-color: hsl(150, 100%, 66%);
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   border: none;
+   transform: translateY(85%);
+}
+
+.cartao .conselho-atualizar:hover{
+    color: #53FFAB;
+    cursor: pointer;
+    box-shadow: 0 5px 15px hsl(150, 100%, 66%);
+}
+
+
+
+@media(max-width:430px){
+    .cartao{
+        max-width: 345px;
+        padding: 0;
+    }
+    .cartao .conselho-atualizar{
+        transform: translateY(50%);
+    }
+    .cartao picture .desktop{
+        display: none;     
+    }
+
+    .cartao picture .mobile{
+        display: block;
+    }
+}
